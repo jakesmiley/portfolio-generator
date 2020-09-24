@@ -69,14 +69,14 @@ Add a New Project
             default: false
         }
     ])
-    // .then(projectData => {
-    //     portfolioData.projects.push(projectData);
-    //     if (projectData.feature) {
-    //       return promptProject(portfolioData);
-    //     } else {
-    //       return portfolioData;
-    //     }
-    //   });
+    .then(projectData => {
+        portfolioData.projects.push(projectData);
+        if (projectData.feature) {
+          return promptProject(portfolioData);
+        } else {
+          return portfolioData;
+        }
+      });
 };
 
 promptUser()
